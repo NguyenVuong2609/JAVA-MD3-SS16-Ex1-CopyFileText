@@ -1,0 +1,6 @@
+
+van
+chuan
+yen
+thu
+Total of char in this file: 14
