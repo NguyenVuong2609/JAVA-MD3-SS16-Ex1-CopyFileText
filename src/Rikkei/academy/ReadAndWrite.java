@@ -34,7 +34,7 @@ public class ReadAndWrite {
             for (int i = 0; i < list.size(); i++) {
                 bufferedWriter.write(list.get(i) + "\n");
             }
-            bufferedWriter.write("Total of char in this file: " + sumOfChar);
+            bufferedWriter.write("Total of characters in this file: " + sumOfChar);
             bufferedWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
