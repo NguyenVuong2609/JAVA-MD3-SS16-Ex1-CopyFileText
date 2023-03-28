@@ -29,6 +29,10 @@ public class ReadAndWrite {
 
     public void writeFile(String filePath, List<String> list, int sumOfChar){
         try {
+            File file = new File(filePath);
+            if (!file.exists()) {
+                throw new FileNotFoundException();
+            }
             FileWriter writer = new FileWriter(filePath, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
             for (int i = 0; i < list.size(); i++) {
